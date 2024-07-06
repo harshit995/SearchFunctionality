@@ -10,6 +10,7 @@ const NavigationBar = () => {
     return (
         <Navbar expand="lg" className="navbar border border-grey">
             <Container>
+                <img className='m-2' src="https://static-00.iconduck.com/assets.00/search-icon-2048x2048-cmujl7en.png" alt="logo" style={{ width: '20px' }} />
                 <Navbar.Brand href="#home">Searching....</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">

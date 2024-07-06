@@ -7,6 +7,7 @@ import NavigationBar from './Components/Navbar';
 import HeaderSection from './Components/HeaderSection'
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import FooterSection from './Components/FooterSection';
 
 const App = () => {
   const [results, setResults] = useState([]);
@@ -77,6 +78,7 @@ const App = () => {
           hasMoreResults={hasMoreResults}
         />
       </Container>
+      <FooterSection />
     </div>
   );
 };
