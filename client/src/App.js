@@ -4,6 +4,7 @@ import SearchResults from './Components/SearchResults';
 import fetchSearchResults from './Services/Api';
 import { Container } from 'react-bootstrap';
 import NavigationBar from './Components/Navbar';
+import HeaderSection from './Components/HeaderSection'
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -67,6 +68,7 @@ const App = () => {
   return (
     <div>
       <NavigationBar />
+      <HeaderSection />
       <Container className="mt-4">
         <SearchBar onSearch={handleSearch} />
         <SearchResults

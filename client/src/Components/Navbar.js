@@ -42,6 +42,12 @@ const NavigationBar = () => {
                 </Navbar.Collapse>
             </Container>
         </Navbar>
+
+
+
+
+
+
     );
 };
 

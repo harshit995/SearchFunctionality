@@ -58,3 +58,64 @@ body {
 .pop-out-animation:hover {
   transform: scale(1.1);
 }
+
+.header-section {
+  position: relative;
+  background-image: url('../public/back.png');
+  /* Update with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px;
+  color: black;
+  margin-bottom: 20px;
+  text-align: left;
+  transition: opacity 0.5s ease-in-out;
+  /* Add transition for opacity */
+}
+
+.header-section:hover {
+  opacity: 0.9;
+  /* Reduce opacity on hover */
+}
+
+.heading-animation {
+  animation: slideInDown 1s ease-out;
+}
+
+.paragraph-animation {
+  animation: fadeInUp 1s ease-out;
+  color: black;
+}
+
+@keyframes slideInDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.pop-out-animation {
+  transition: transform 0.3s ease-in-out;
+}
+
+.pop-out-animation:hover {
+  transform: scale(1.1);
+}
