@@ -1,10 +1,6 @@
-
-
-
 import axios from 'axios';
 
-const API_URL = 'https://baconipsum.com/api/?type=all-meat&paras=50'; // Placeholder text API
-
+const API_URL = 'https://baconipsum.com/api/?type=all-meat&paras=50';
 const fetchSearchResults = async (query) => {
     const response = await axios.get(API_URL);
     const paragraphs = response.data;

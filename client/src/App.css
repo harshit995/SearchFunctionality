@@ -1,7 +1,6 @@
-/* App-wide styles */
 body {
   background-color: #f0f8ff;
-  /* Light blue background */
+
 }
 
 .search-bar {
@@ -11,7 +10,7 @@ body {
 
 .search-bar:hover {
   transform: scale(1.05);
-  /* Scale up slightly on hover */
+
 }
 
 /* Card animation */
@@ -35,7 +34,6 @@ body {
 }
 
 
-/* styles.css */
 .navbar {
   background-color: white;
 }
