@@ -1,6 +1,3 @@
-
-
-
 import React from 'react';
 import { Card, Button, Alert } from 'react-bootstrap';
 
@@ -28,5 +25,3 @@ const SearchResults = ({ results, onLoadMore, hasMoreResults }) => {
 };
 
 export default SearchResults;
-
-

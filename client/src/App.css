@@ -33,3 +33,28 @@ body {
   /* Light blue on hover */
   color: white;
 }
+
+
+/* styles.css */
+.navbar {
+  background-color: white;
+}
+
+.navbar-brand,
+.nav-link {
+  color: grey;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-link:hover,
+.navbar-brand:hover {
+  color: black;
+}
+
+.pop-out-animation {
+  transition: transform 0.2s ease-in-out;
+}
+
+.pop-out-animation:hover {
+  transform: scale(1.1);
+}

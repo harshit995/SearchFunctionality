@@ -32,6 +32,37 @@ const App = () => {
     }
   }, [cache]);
 
+  const handleLoadMore = () => {
+    const nextPage = page + 1;
+    setPage(nextPage);
+    const nextResults = cache[query].slice((nextPage - 1) * 5, nextPage * 5);
+    setResults((prevResults) => [...prevResults, ...nextResults]);
+    setHasMoreResults(cache[query].length > nextPage * 5);
+  };
+
+  useEffect(() => {
+    const abortController = new AbortController();
+
+    const fetchResults = async () => {
+      if (query.length >= 3 && !cache[query]) {
+        const res = await fetchSearchResults(query);
+        if (!abortController.signal.aborted) {
+          setResults(res.slice(0, 5));
+          setHasMoreResults(res.length > 5);
+          setCache((prevCache) => ({
+            ...prevCache,
+            [query]: res,
+          }));
+        }
+      }
+    };
+
+    fetchResults();
+
+    return () => {
+      abortController.abort();
+    };
+  }, [query, cache]);
 
   return (
     <div>

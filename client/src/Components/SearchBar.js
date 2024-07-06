@@ -32,7 +32,7 @@ const SearchBar = ({ onSearch }) => {
             <Form>
                 <FormControl
                     type="text"
-                    placeholder="Search"
+                    placeholder="Type atleast 3 letters for searching...."
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
                     onKeyPress={handleKeyPress}
